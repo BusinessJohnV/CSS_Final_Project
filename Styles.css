@@ -54,22 +54,45 @@ header > img {
 }
 
 .lower-div-m {
-    background-image: url(img/01.png);
-    height: 200px;
+    background-image: url(images/img/01.png);
+    background-repeat: no-repeat;
     align-content: center;
+    margin: 10px 5px 5px 5px;
 }
 
 .lower-div-m > p {
     padding-left: 20px;
 }
 
-footer {
-    background-color: #34436b;
-    color: white;
+.lower-div-f {
+    background-image: url(images/img/02.png);
+    background-repeat: no-repeat;
+    align-content: center;
+    margin: 10px 5px 5px 5px;
+}
+
+.lower-div-f > p {
+    padding-left: 20px;
+}
+
+.lower-div-o {
+    background-image: url(images/img/03-01.png);
+    background-repeat: no-repeat;
+    align-content: center;
+    margin: 10px 5px 5px 5px;
+}
+
+.lower-div-o > p {
+    padding-left: 20px;
 }
 
 .pre-footer {
     background-color: #c7232e;
+    color: white;
+}
+
+footer {
+    background-color: #34436b;
     color: white;
 }
 
