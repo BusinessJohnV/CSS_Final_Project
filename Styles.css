@@ -1,5 +1,24 @@
 body {
     margin: 0px;
+
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #b8bfd0;
+}
+
+.divider > img {
+    margin: 10px;
 }
 
 header {
@@ -14,6 +33,7 @@ header {
 header > span {
     align-self: center;
     padding: 10px;
+    font-size: 16px;
 }
 
 header > img {
@@ -45,12 +65,17 @@ header > img {
     text-align: center;
     justify-self: center;
     border-collapse: collapse;
+    font-size: 16px;
 }
 
 .uppertd {
     border-style: solid;
     border-width: 2px;
     height: 50px;
+}
+
+.lower-categories {
+    font-size: 24px;
 }
 
 .lower-div-m {
@@ -88,6 +113,96 @@ header > img {
 
 .divider {
     align-content: center;
+}
+
+.products-button {
+    text-align: center;
+}
+
+.products-button > button {
+    color: white;
+    font-size: 16px;
+    background-color: #c7232f;
+    border-style: none;
+    padding: 15px;
+}
+
+.product1 > p, .product2 > p, .product3 > p, .product4 > p {
+    font-size: 18px;
+    color: #304068;
+}
+
+.start-text {
+    font-size: 35px;
+}
+
+.upper-text {
+    text-align: center;
+    color: #c7232f;
+}
+
+.lower-text {
+    text-align: center;
+    color: #304068;
+    font-weight: bold;
+}
+
+.product1 {
+    background-image: url(images/img2/Barefoot-Brown.png);
+}
+
+.product2 {
+    background-image: url(images/img2/Barefoot-Pink.png);
+}
+
+.product3 {
+    background-image: url(images/img2/Sandals-Blue.png);
+}
+.product4 {
+    background-image: url(images/img2/High-Shoes.png);
+}
+
+.new-price {
+    font-size: 20px;
+    color: #c7232f;
+    font-weight: bold;
+}
+
+.old-price {
+    font-size: 20px;
+    color: #b5bfd5;
+    text-decoration: line-through;
+}
+
+.storage {
+    margin-top: 20px;
+}
+
+.storage-availability, .free-delivery, .size-measurement {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin: 10px;
+}
+.storage-availability > img, .free-delivery > img, .size-measurement > img {
+    background-color: #304068;
+    border-color: #304068;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 10px;
+}
+
+.newsletter {
+    background-image: url();
+    margin-top: 40px;
+}
+
+.newsletter > p {
+    text-align: center;
+}
+
+.upper-text-form {
+    font-weight: bold;
 }
 
 .pre-footer {
