@@ -1,6 +1,10 @@
 body {
     margin: 0px;
+    font-family: Libre Franklin;
+}
 
+a {
+    text-decoration: none;
 }
 
 .divider {
@@ -36,7 +40,7 @@ header > span {
     font-size: 16px;
 }
 
-header > img {
+header > a {
     align-self: center;
     justify-self: right;
     width: 30px;
@@ -44,13 +48,13 @@ header > img {
     padding: 10px;
 }
 
-.upper-images {
+.upper-images, .upper-images > a {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr;
-    margin: 20px 5px 5px 5px;
+    margin: 10px 5px 5px 5px;
 }
 
-.upper-images > img {
+.upper-images > img, .upper-images > a {
     align-self: center;
 }
 
@@ -60,6 +64,7 @@ header > img {
 
 .categories-table {
     width: 95%;
+    color: #b4bed5;
     border-style: solid;
     border-width: 2px;
     text-align: center;
@@ -70,12 +75,14 @@ header > img {
 
 .uppertd {
     border-style: solid;
+    border-color: #b4bed5;
     border-width: 2px;
     height: 50px;
 }
 
 .lower-categories {
     font-size: 24px;
+    text-transform: uppercase;
 }
 
 .lower-div-m {
@@ -83,10 +90,13 @@ header > img {
     background-repeat: no-repeat;
     align-content: center;
     margin: 10px 5px 5px 5px;
+    height: 200px;
+    color: #304068;
 }
 
-.lower-div-m > p {
-    padding-left: 20px;
+.boys:hover {
+    text-decoration: underline;
+    text-decoration-color: #304068;
 }
 
 .lower-div-f {
@@ -94,10 +104,13 @@ header > img {
     background-repeat: no-repeat;
     align-content: center;
     margin: 10px 5px 5px 5px;
+    height: 200px;
+    color: #c7232f;
 }
 
-.lower-div-f > p {
-    padding-left: 20px;
+.girls:hover {
+    text-decoration: underline;
+    text-decoration-color: #c7232f;
 }
 
 .lower-div-o {
@@ -105,10 +118,18 @@ header > img {
     background-repeat: no-repeat;
     align-content: center;
     margin: 10px 5px 5px 5px;
+    height: 200px;
+    color: #304068;
 }
 
-.lower-div-o > p {
+.other:hover {
+    text-decoration: underline;
+    text-decoration-color: #304068;
+}
+
+.lower-div-m > p, .lower-div-f > p, .lower-div-o > p {
     padding-left: 20px;
+    width: 40%;
 }
 
 .divider {
@@ -127,9 +148,41 @@ header > img {
     padding: 15px;
 }
 
-.product1 > p, .product2 > p, .product3 > p, .product4 > p {
+.product1, .product2, .product3, .product4 {
+    border-style: solid;
+    border-color: #b4bed5;
+    margin: 50px;
+}
+
+.product1 > a > img, .product2 > a > img, .product3 > a > img, .product4 > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.product1 > a > p, .product2 > a > p, .product3 > a > p, .product4 > a > p {
     font-size: 18px;
     color: #304068;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.product1 > a > .product-cart, .product2 > a > .product-cart, .product3 > a > .product-cart, .product4 > a > .product-cart {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.product1:hover, .product2:hover, .product3:hover, .product4:hover {
+    border-color: #c7232f;
+
+    p {
+        font-weight: bold;
+    }
+    a > .product-cart, a > .product-cart, a > .product-cart, a > .product-cart {
+        width: 30px;
+        height: 30px;
+        display: inline;
+    }
 }
 
 .start-text {
@@ -147,25 +200,11 @@ header > img {
     font-weight: bold;
 }
 
-.product1 {
-    background-image: url(images/img2/Barefoot-Brown.png);
-}
-
-.product2 {
-    background-image: url(images/img2/Barefoot-Pink.png);
-}
-
-.product3 {
-    background-image: url(images/img2/Sandals-Blue.png);
-}
-.product4 {
-    background-image: url(images/img2/High-Shoes.png);
-}
-
 .new-price {
     font-size: 20px;
     color: #c7232f;
     font-weight: bold;
+    margin: 10px 10px 20px 10px;
 }
 
 .old-price {
@@ -193,8 +232,11 @@ header > img {
 }
 
 .newsletter {
-    background-image: url();
+    background-image: url(images/img2/Newsletter.png);
     margin-top: 40px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 35% 20%;
 }
 
 .newsletter > p {
