@@ -74,6 +74,21 @@ header > a {
     font-size: 16px;
 }
 
+.top-advert {
+    display: none;
+    background-image: url(images/img/03-02.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 450px;
+    align-content: center;
+    margin: 20px 40px 20px 40px;
+    align-items: right;
+}
+
+.top-advert > p {
+    text-align: center;
+}
+
 .uppertd {
     border-style: solid;
     border-color: #b4bed5;
@@ -89,6 +104,7 @@ header > a {
 .lower-div-m {
     background-image: url(images/img/01.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     align-content: center;
     margin: 10px 5px 5px 5px;
     height: 200px;
@@ -103,6 +119,7 @@ header > a {
 .lower-div-f {
     background-image: url(images/img/02.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     align-content: center;
     margin: 10px 5px 5px 5px;
     height: 200px;
@@ -117,6 +134,7 @@ header > a {
 .lower-div-o {
     background-image: url(images/img/03-01.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     align-content: center;
     margin: 10px 5px 5px 5px;
     height: 200px;
@@ -135,6 +153,10 @@ header > a {
 
 .products-button {
     text-align: center;
+
+    :hover {
+        background-color: #8a1920;
+    }
 }
 
 .products-button > button {
@@ -260,7 +282,6 @@ header > a {
     border-color: #304068;
     border-style: solid;
     border-radius: 50%;
-    border-width: 10px;
 }
 
 .newsletter {
@@ -362,7 +383,7 @@ footer {
     margin: 15px 0px 15px 0px;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 1024px) {
     header {
         padding: 0 40px;
     }
@@ -388,9 +409,9 @@ footer {
         margin: 20px 40px;
         gap: 20px;
     }
-    
-    .categories-table {
-        
+
+    .top-advert {
+        display: block;
     }
     
     .lower-categories {
@@ -454,6 +475,10 @@ footer {
         grid-template-columns: auto 1fr;
         margin: 0;
     }
+
+    .upper-text-form {
+        margin-bottom: 10px;
+    }
     
     .newsletter {
         background-size: cover;
@@ -467,7 +492,6 @@ footer {
     
     .newsletter form {
         display: flex;
-        gap: 10px;
         align-items: center;
     }
     
@@ -477,6 +501,13 @@ footer {
     
     .newsletter button {
         margin-top: 0;
+    }
+
+    .pre-footer {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     
     .pre-footer > p:first-child {
@@ -524,6 +555,15 @@ footer {
         margin-bottom: 5px;
         font-size: 14px;
     }
+
+    .bottom-part {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    footer {
+        padding: 20px;
+    }
     
     footer > p:first-child {
         font-size: 24px;
@@ -533,8 +573,6 @@ footer {
     }
     
     footer img {
-        width: 24px;
-        height: 24px;
         vertical-align: middle;
         margin-right: 10px;
     }
