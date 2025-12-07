@@ -383,6 +383,16 @@ footer {
     margin: 15px 0px 15px 0px;
 }
 
+.navigator {
+    margin: 20px 0px 20px 10px;
+}
+
+.demand-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
 @media screen and (min-width: 1024px) {
     header {
         padding: 0 40px;
