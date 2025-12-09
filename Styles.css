@@ -376,11 +376,13 @@ footer {
 
 .form-header > h2 {
     text-align: center;
+    margin: 0px 10px 10px 10px;
     color: #304068;
 }
 
 .form-header > p {
     margin: 0px 10px 0px 10px;
+    color: #304068;
 }
 
 .cart-form > img {
@@ -394,19 +396,31 @@ footer {
 }
 
 .demand-form > label {
-    margin: 10px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
+    color: #304068;
 }
 
 .demand-form > input {
     height: 40px;
     border-style: solid;
     border-color: #b4bed5;
+    color: #304068;
+}
+
+.payment-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 80px;
+    margin: 20px 0px 0px 0px;
+    color: #304068;
 }
 
 .form-buttons {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .back-button {
@@ -867,10 +881,28 @@ footer {
 
     .cart-form > img {
         display: inline;
+        width: 100%;
     }
 
     .cart-form {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+
+    .payment-type {
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        height: 50px;
+    }
+
+    .form-header > h2 {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .form-place {
+        margin: 0px 10px 0px 10px;
     }
 }

@@ -48,39 +48,47 @@
 
         <div class="cart-form">
             <img src="images/img/Child.png" alt="child">
-            <div>
+            <div class="form-place">
                 <div class="form-header">
                     <h2>Poptávkový formulář</h2>
                     <p>Vyplňte formulář níže a my se Vám ozveme jakmile to půjde.</p>
                 </div>
 
                 <form action="demand.php" method="get" class="demand-form">
-                    <label>Jméno</label>
-                    <input type="text" placeholder="Zadejte své jméno...">
+                    <label for="Name">Jméno</label>
+                    <input type="text" placeholder="Zadejte své jméno..." name="Name">
 
-                    <label>Příjmení</label>
-                    <input type="text" placeholder="Zadejte své příjmení...">
+                    <label for="Surname">Příjmení</label>
+                    <input type="text" placeholder="Zadejte své příjmení..." name="Surname">
 
-                    <label>E-mail</label>
-                    <input type="email" placeholder="Zadejte svůj e-mail..." required>
+                    <label for="E-Mail">E-mail</label>
+                    <input type="email" placeholder="Zadejte svůj e-mail..." name="E-Mail" required>
 
-                    <label>Telefon</label>
-                    <input type="tel" placeholder="Zadejte svůj telefon...">
+                    <label for="Phone">Telefon</label>
+                    <input type="tel" placeholder="Zadejte svůj telefon..." name="Phone">
 
-                    <label>Země</label>
-                    <input list="countries" placeholder="Vyber zemi">
+                    <label for="Country">Země</label>
+                    <input list="countries" placeholder="Vyber zemi" name="Country">
                     <datalist id="countries">
                         <option value="ČR">Česká republika</option>
                         <option value="SR">Slovenská republika</option>
                     </datalist>
 
-                    <label>Způsob platby</label>
-                    <input type="radio">
-                    <span>Hotově</span>
-                    <input type="radio">
-                    <span>Převodem</span>
-                    <input type="radio">
-                    <span>Kartou</span>
+                    <label for="payment">Způsob platby</label>
+                    <div class="payment-type">
+                        <div>
+                            <input type="radio" name="payment">
+                            <span>Hotově</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment">
+                            <span>Převodem</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment">
+                            <span>Kartou</span>
+                        </div>
+                    </div>
 
                     <div class="form-buttons">
                         <button class="back-button" type="reset">
