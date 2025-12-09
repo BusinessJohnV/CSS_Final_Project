@@ -46,48 +46,55 @@
             <a href="demand.html">Poptávka</a>
         </div>
 
-        <form action="demand.php" method="get" class="demand-form">
-            <label>
-                Jméno
-            </label>
-            <input type="text" placeholder="Zadejte své jméno...">
+        <div class="cart-form">
+            <img src="images/img/Child.png" alt="child">
+            <div>
+                <div class="form-header">
+                    <h2>Poptávkový formulář</h2>
+                    <p>Vyplňte formulář níže a my se Vám ozveme jakmile to půjde.</p>
+                </div>
 
-            <label>
-                Příjmení
-            </label>
-            <input type="text" placeholder="Zadejte své příjmení...">
+                <form action="demand.php" method="get" class="demand-form">
+                    <label>Jméno</label>
+                    <input type="text" placeholder="Zadejte své jméno...">
 
-            <label>
-                E-mail
-            </label>
-            <input type="email" placeholder="Zadejte svůj e-mail...">
+                    <label>Příjmení</label>
+                    <input type="text" placeholder="Zadejte své příjmení...">
 
-            <label>
-                Telefon
-            </label>
-            <input type="tel" placeholder="Zadejte svůj telefon...">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Zadejte svůj e-mail..." required>
 
-            <label>
-                Země
-            </label>
-            <input list="countries" placeholder="Vyber zemi">
-            <datalist id="countries">
-                <option value="ČR">Česká republika</option>
-                <option value="SR">Slovenská republika</option>
-            </datalist>
+                    <label>Telefon</label>
+                    <input type="tel" placeholder="Zadejte svůj telefon...">
 
-            <label>
-                Způsob platby
-                <input type="radio">
-                <input type="radio">
-                <input type="radio">
-            </label>
+                    <label>Země</label>
+                    <input list="countries" placeholder="Vyber zemi">
+                    <datalist id="countries">
+                        <option value="ČR">Česká republika</option>
+                        <option value="SR">Slovenská republika</option>
+                    </datalist>
 
-            <div class="form-buttons">
-                <button>&gt; Zpět</button>
-                <button>&gt; Pokračovat</button>
+                    <label>Způsob platby</label>
+                    <input type="radio">
+                    <span>Hotově</span>
+                    <input type="radio">
+                    <span>Převodem</span>
+                    <input type="radio">
+                    <span>Kartou</span>
+
+                    <div class="form-buttons">
+                        <button class="back-button" type="reset">
+                            <img src="images/img/Back_Arrow.png" alt="back_arr">
+                            Zpět
+                        </button>
+                        <button class="continue-button" type="submit">
+                            <img src="images/img/Front_Arrow.png" alt="front_arr">
+                            Pokračovat
+                        </button>
+                    </div>
+                </form>
             </div>
-        </form>
+        </div>
 
         <div class="bottom-part">
             <div class="pre-footer">

@@ -43,9 +43,9 @@ header > a {
 .divider::before, .divider::after {
     content: "";
     flex: 1;
-    border-bottom: 1px;
     border-style: solid;
     border-color: #b8bfd0;
+    border-width: 1px;
 }
 
 .divider > img {
@@ -159,14 +159,14 @@ header > a {
     }
 }
 
-.products-button > button {
+.products-button > a > button {
     font-size: 16px;
     background-color: #c7232f;
     border-style: none;
     padding: 15px;
 }
 
-.products-button > button > a {
+.products-button > a > button {
     color: white;
 }
 
@@ -362,12 +362,74 @@ footer {
     margin: 20px 0px 20px 10px;
 }
 
+.navigator > a:nth-child(1){
+    color: #c7232e;
+}
+
+.navigator > span:nth-child(2) {
+    color: #c7232e;
+}
+
+.navigator > a:nth-child(3) {
+    color: #304068;
+}
+
+.form-header > h2 {
+    text-align: center;
+    color: #304068;
+}
+
+.form-header > p {
+    margin: 0px 10px 0px 10px;
+}
+
+.cart-form > img {
+    display: none;
+}
+
 .demand-form {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
 
+.demand-form > label {
+    margin: 10px 0px 0px 0px;
+}
+
+.demand-form > input {
+    height: 40px;
+    border-style: solid;
+    border-color: #b4bed5;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.back-button {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #8a1920;
+    background-color: white;
+    color: #304068;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.continue-button {
+    border-style: none;
+    background-color: #c7232e;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    font-weight: bold;
+}
 .product-main-pic {
     border-style: solid;
     border-width: 2px;
@@ -413,11 +475,13 @@ footer {
 }
 
 .product-parameters {
-    margin: 20px 10px 10px 10px;
+    margin: 20px 10px 20px 10px;
 }
 
-.product-parameters > span {
+.product-parameters > p {
     color: #304068;
+    margin: 20px 0px 5px 0px;
+    font-weight: bold;
 }
 
 .product-colors {
@@ -461,6 +525,130 @@ footer {
 
 .color5 {
     background-color: #abd373;
+}
+
+.product-sizes {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.product-sizes > a:nth-child(2) {
+    text-decoration: line-through;
+    color: #bac3d8;
+}
+
+.product-sizes > a {
+    color: #304068;
+}
+
+.price-part {
+    margin: 0px 10px 0px 10px;
+}
+
+.price-part > h2 {
+    color: #304068;
+}
+
+.price-part > p:nth-child(2) {
+    margin: 0px;
+    text-decoration: line-through;
+    color: #bac3d8;
+}
+
+.product-info {
+    margin: 0px 10px 0px 10px;
+    text-align: justify;
+}
+
+.product-info > h2 {
+    text-align: center;
+    color: #304068;
+}
+
+.product-button {
+    background-color: #c7232e;
+    height: 50px;
+    border-style: none;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+}
+
+.price-area {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.price-area > a > button {
+    font-size: 20px;
+    width: 200px;
+}
+
+.price-area > p {
+    font-size: 40px;
+    color: #c7232e;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.parameters-container {
+    width: 95%;
+    padding: 10px;
+}
+
+.header {
+    background-color: #3d5068;
+    color: white;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.parameter-row {
+    display: flex;
+    padding: 20px 10px;
+}
+
+.parameter-row:nth-child(even) {
+    background-color: #d4d8e1;
+}
+
+.parameter-row:nth-child(odd) {
+    background-color: white;
+}
+
+.parameter-label {
+    font-weight: bold;
+    color: #3d5068;
+    font-size: 20px;
+    flex: 1;
+}
+
+.parameter-value {
+    color: #6b7689;
+    font-size: 20px;
+    flex: 1;
+}
+
+.products-header {
+    text-align: center;
+    margin: 40px 0px 5px 0px;
+    font-size: 30px;
+}
+
+.products-header > p:nth-child(1) {
+    color: #c7232e;
+    margin: 5px;
+}
+
+.products-header > p:nth-child(2){
+    color: #304068;
+    margin: 5px;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 1024px) {
@@ -675,5 +863,14 @@ footer {
     footer > img:nth-of-type(5) {
         margin-top: 20px;
         margin-right: 15px;
+    }
+
+    .cart-form > img {
+        display: inline;
+    }
+
+    .cart-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
